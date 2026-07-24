@@ -45,6 +45,7 @@ public class ChatController {
 
     // Le front n'est pas digne de confiance : on valide tout ici
     private void validate(ChatRequest request) {
+        System.out.println("REQUEST");
         if (request == null || request.messages() == null || request.messages().isEmpty()
                 || request.messages().size() > MAX_MESSAGES) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid messages");
@@ -60,4 +61,5 @@ public class ChatController {
             }
         }
     }
+
 }
