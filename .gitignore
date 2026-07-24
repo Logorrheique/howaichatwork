@@ -1,0 +1,64 @@
+# ===== Secrets (never commit API keys) =====
+**/src/main/resources/application.properties
+**/src/main/resources/application-*.properties
+.env
+.env.*
+*.pem
+*.key
+
+# ===== Java / Maven =====
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+
+# ===== Angular / Node =====
+node_modules/
+dist/
+out-tsc/
+.angular/
+.sass-cache/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+.pnpm-debug.log*
+/coverage/
+/.nx/
+connect.lock
+libpeerconnection.log
+testem.log
+typings/
+
+# ===== IDEs =====
+.idea/
+*.iml
+*.iws
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+nbproject/
+nbbuild/
+nbdist/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Terraform (if you add IaC later) =====
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
