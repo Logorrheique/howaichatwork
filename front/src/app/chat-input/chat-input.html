@@ -1,5 +1,7 @@
 <div class="flex flex-col gap-4 pt-[200px]">
+    <h1 class="text-5xl font-bold text-center pt-10">How AI chat Work ?</h1>
     <hlm-field class="px-[300px]" orientation="horizontal">
+
         <input #promptArea hlmInput type="search" placeholder="Type Something..." [disabled]="chatApi.loading()"
             (keyup.enter)="chatApi.getResultOfPrompt(promptArea.value)" />
 
