@@ -1,0 +1,9 @@
+**/node_modules
+**/target
+**/dist
+**/.angular
+.git
+back.zip
+# la clé ne doit jamais entrer dans l'image
+**/application.properties
+**/.env*
